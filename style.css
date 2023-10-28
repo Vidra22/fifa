@@ -1,0 +1,155 @@
+header{
+font-family:cursive ;
+background-color: crimson;
+border-radius:15px ;
+text-align: center;
+}
+header h1 {
+color:lightseagreen ;
+}
+header p{
+border: solid lime;
+border-radius:15px ;
+}
+main{
+background-color: mediumorchid;
+border-radius: 15px;
+font-family:cursive ;
+}
+main h3 {
+border:solid green ;
+border-radius:15px ;
+background-color: indigo ;
+border-bottom:5px dotted darkgreen ;
+    border-top:5px dotted darkred;
+    border-left: 5px dotted darkgreen;
+    border-right: 5px dotted darkred;
+    padding: 5px;
+}
+main h2{
+border:solid red ;
+border-radius:15px ;
+background-color:darkorange ;
+border-bottom:5px dotted darkgreen ;
+    border-top:5px dotted darkred;
+    border-left: 5px dotted darkgreen;
+    border-right: 5px dotted darkred;
+    padding: 5px;
+
+}
+main img{
+border:5px solid blue;
+border-radius:15px ;
+margin:5px ;
+padding:5px ;
+}
+main h4{
+border:solid red ;
+border-radius:15px ;
+background-color:darkcyan ;
+border-bottom:5px dotted darkgreen ;
+    border-top:5px dotted darkred;
+    border-left: 5px dotted darkgreen;
+    border-right: 5px dotted darkred;
+    padding: 5px;
+}
+u {
+  text-decoration: #f00 wavy underline;
+}
+label {
+  padding-right: 10px;
+  font-size: 5px;
+}
+label {
+  font-family:cursive;
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 15px;
+  padding: 2px 5px;
+}
+legend {
+  background-color: darkgreen;
+  color: darkturquoise;
+  padding: 3px 6px;
+}
+
+input {
+  margin: 5px;
+}
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size:15px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+footer{
+border-radius:15px ;
+background-color: firebrick;
+color: gold;
+}
+footer h5{
+font-size: 20px;
+}
+footer p{
+color:mediumseagreen;
+font-size: 20px;
+}
+footer a{
+ text-decoration:none;
+}
+details {
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  
+  margin-bottom: 0.5em;
+}
