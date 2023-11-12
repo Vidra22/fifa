@@ -6,9 +6,10 @@ text-align: center;
 }
 header h1 {
 color:lightseagreen ;
+text-transform: uppercase;
 }
 header p{
-border: solid lime;
+border: solid lawngreen;
 border-radius:15px ;
 }
 main{
@@ -80,13 +81,13 @@ input {
   margin: 5px;
 }
 kbd {
-  background-color: #eee;
+  background-color: yellowgreen;
   border-radius: 3px;
-  border: 1px solid #b4b4b4;
+  border: 1px solid blue;
   box-shadow:
     0 1px 1px rgba(0, 0, 0, 0.2),
     0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  color: #333;
+  color: black;
   display: inline-block;
   font-size:15px;
   font-weight: 700;
@@ -121,18 +122,20 @@ kbd {
 }
 footer{
 border-radius:15px ;
-background-color:firebrick ;
+background-image: url(https://transphoto.org/photo/05/91/04/591042_s.jpg);
+height:300px;
+width: 600px;
 color: gold;
 }
 footer h5{
 font-size: 20px;
 }
 footer p{
-color:mediumseagreen;
+color:black;
 font-size: 20px;
 }
 footer a{
- text-decoration:none;
+ text-decoration:dotted;
 }
 .news {
   background-color: bisque;
@@ -222,12 +225,25 @@ background-image: url(https://static.ukrinform.com/photos/2020_06/thumb_files/63
 }
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
-@media (max-width: 550px) {
+media (max-width: 550px); {
 .menu-main {padding-top: 0;}
 .menu-main li {display: block;}
 .menu-main li:after {content: none;}
 .menu-main a {
   padding: 25px 0 20px; 
   margin: 0 30px;
+  }
+textarea:blank {
+  border: 3px solid red;
+}extarea:blank {
+  border: 3px solid red;
+}
+label {
+  display: block;
+  background-color: aqua;
 }
 
+input[type='submit'],
+label {
+  margin-top: 1rem;
+}
