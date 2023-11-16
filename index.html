@@ -2,37 +2,55 @@
 	<title>🚎Тролейбуси та їх розкладу Житомирі🚎</title>
 	<body>
 	<head>
-		<link rel="icon" type="https://zhzh.com.ua/storage/20052/conversions/ava9-big.jpg"/>
+		<link rel="icon" href="https://zt.20minut.ua/img/cache/reference/news_fb_og/0026/53/2552380-u-zhitomiri-zapratsyuvali-primiski-marshruti-rozklad.jpeg" />
 		<link rel="stylesheet"href="style.css"/>
 	</head>
 	<header>
-		<nav class="top-menu">
+	<h1>🚎Толейбуси та їх розклад у Житомирі🚎</h1>
+	<p>/тут буде розмiщений весь розклад та зміни в ньому\</p>
+  <select onchange="changeLanguage(this.value)">
+  <option value="uk">УКРАЇНСЬКА</option>
+  <option value="en">ENGLISH</option>
+  <option value="fr">Français</option>
+</select>
+
+<script>
+  function changeLanguage(language) {
+    window.location.href = `/${language}/index.html`;
+  }
+</script>
+	<nav class="top-menu">
   <ul class="menu-main">
-    <li><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" class="current">Замовити Сайт</a></li>
-    <li><a href="">Питання</a></li>
-    <li><a href="">Контаки</a></li>
+    <li><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" >Замовити Сайт🌲</a></li>
+    <li><a href="https://vidra22.github.io/fifa2/">Питання❔</a></li>
+    <li><a href="https://vidra22.github.io/fifa2/">Контаки👨🏻‍🦰</a></li>
+	<nav>
+	<li><a href="#price">Працюючі✔️</a></li>
+	<li><a href="#delivery">З них не працюючі❌️</a></li>
+	<li><a href="#wholesale">Фотографії🗺️</a></li>
+	<li><a href="#about_us">Розклад🍀</a></li>
+	</nav>
+	<input type="time" min="09:00" step="900">
   </ul>
 </nav>
-	<h1>🚎Толейбуси та їх розклад у Житомирі🚎</h1>
-	<p>/тут буде розмщений весь розклад та зміни в ньому\</p>
 	</header>
 	<main>
 		<p><marquee>На <kbd>сьогоднішній</kbd> день в <u>Житомирі</u> курсує 11 маршрутів тролейбусів.</marquee></p>
 		<fieldset>
   <legend>Вибеіть свій улюблений вид тролейбуса</legend>
-  <input type="radio" id="Старий" name="monster" value="K" />
+  <input  type="radio" id="Старий" name="monster" value="K" />
   <label for="Старий">Старий</label><br />
   <input type="radio" id="Новий" name="monster" value="S" />
   <label for="Новий">Новий</label><br/>
 </fieldset>
-		<h2><u>З них не працюючі❌️</u></h2>
+		<h2 id="delivery"><u>З них не працюючі❌️</u></h2>
 		<p>№5A(ГІДРОПАРК — ПТАХОФАБРИКА)</p>
 		<p>№5(ГІДРОПАРК - пл.ПЕРЕМОГИ)</p>
 		<p>№6(КРОШНЯ — ЗОК)</p>
 		<p>№8(ЧУЛОЧНА ФАБРИКА - майдан СТАНИШІВСЬКИЙ)</p>
 		<p>№9(ГІДРОПАРК - вул.КОСМОНАВТІВ)</p>
 		<p>№12(КРОШНЯ — ЦЕНТР)</p>
-		<h3><u>Працюючі✔️</u></h3>
+		<h3 id="price"><u>Працюючі✔️</u></h3>
 		<p>№1A(ВОКЗАЛ - ВОКЗАЛ)</p>
 		<p>№1Б(ВОКЗАЛ - ВОКЗАЛ)</p>
 		<p>№2(БОГУНІЯ — СМОЛЯНКА
@@ -66,26 +84,15 @@
   <option value="15">15</option>
   <option value="15А">15А</option>
 </select>
-		<img src="https://news.city.zt.ua/uploads/posts/2011-08/1312565380_149246880.jpg"height="150"width="230"/>
+		<img id="wholesale" src="https://news.city.zt.ua/uploads/posts/2011-08/1312565380_149246880.jpg"height="150"width="230"/>
 		<img src="https://zhzh.com.ua/storage/17246/conversions/253253134_231874145706956_2077050792891323586_n-big.jpg"height="150"width="230"/>
 		<img  src="https://zt-news.org.ua/uploads/posts/2022-07/1534881.jpg"height="150"width="230"/>
 		<img src="https://transphoto.org/photo/13/30/61/1330616_s.jpg"height="150"width="240"/>
-		<h4>Розклад</h4>
+		<h4 id="about_us">Розклад</h4>
 		<label for="name">Введіть назву вулиці:</label>
 
 <input type="text" id="name" name="name" required minlength="4" maxlength="1000" size="10" />
 		<img src=""height="500"width="600"/>
-		<p>Виберіть улюблений колір тролейбуса:</p>
-
-<div>
-  <input type="color" id="head" name="head" value="#e66465" />
-  <label for="head">Зад і Перед</label>
-</div>
-
-<div>
-  <input type="color" id="body" name="body" value="#f6b73c" />
-  <label for="body">Основа</label>
-</div>
   </main>
 		<footer>
 <h5 class="dd">Коментарі</h5>
@@ -95,21 +102,81 @@
   <summary>Inform🍁</summary>
 	<p>Пошта:<a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new">dmitrosmatenko753@gmail.com</a></p>
 	<p>Номер т.:050706051</p>
-	</details>
-  <div>
-  <label for="username">Username:</label>
-  <input type="text" id="username" name="username" />
-</div>
+</details>
+    <style>
+        #chatbox {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            overflow-y: scroll;
+			background-color: red;
+        }
 
-<div>
-  <label for="pass">Password:</label>
-  <input type="password" id="pass" name="password" minlength="100000000000000000" required />
-</div>
-<label for="avatar">Choose a profile picture:</label>
+        #inputbox {
+            width: 250px;
+            height: 30px;
+        }
+    </style>
+    <div id="chatbox"></div>
+    <input type="text" id="inputbox" placeholder="Введите сообщение">
+    <button onclick="sendMessage()">Отправить</button>
 
-<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+    <script>
+        var chatbox = document.getElementById("chatbox");
+        var inputbox = document.getElementById("inputbox");
 
+        function sendMessage() {
+            var message = inputbox.value;
+            var html = "<p>You: " + message + "</p>";
+            chatbox.innerHTML += html;
+            inputbox.value = "";
+        }
+    </script>
+    <style>
+#myBtn {
+  display: none; /* по умолчанию скрыта */
+  position: fixed; /* фиксированное позиционирование */
+  bottom: 20px; /* отступ от нижней границы */
+  right: 30px; /* отступ от правой границы */
+  z-index: 99; /* позволяет расположить кнопку выше других элементов */
+  border: none; /* без границы */
+  outline: none; /* без контура */
+  background-color: green; /* цвет фона */
+  color: white; /* цвет текста */
+  cursor: pointer; /* изменение курсора при наведении */
+  padding: 15px; /* внутренний отступ */
+  border-radius: 10px; /* скругленные углы */
+  font-size: 18px; /* размер шрифта */
+}
 
-<input type="submit" value="Sign in" />
+#myBtn:hover {
+  background-color:violet; /* цвет фона при наведении */
+}
+</style>
+<button onclick="topFunction()" id="myBtn" title="Вверх">↑</button>
+
+<!-- Добавьте здесь контент веб-страницы -->
+
+<script>
+// Показать кнопку "вверх", когда прокрутка превышает высоту окна
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Прокрутить страницу вверх, когда нажата кнопка "вверх"
+function topFunction() {
+  document.body.scrollTop = 0; // Для Safari
+  document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
+}
+</script>
+
+		</footer>
 	</body>
 </html>
+
