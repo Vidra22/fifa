@@ -39,10 +39,10 @@ border-bottom:5px dotted darkgreen ;
 
 }
 main img{
-border:5px solid blue;
-border-radius:15px ;
-margin:5px ;
-padding:5px ;
+border-radius: 10px;
+border-bottom-style: dashed;
+border-left-style: dashed;
+border-top-style: dashed;
 }
 main h4{
 border:solid red ;
@@ -101,7 +101,7 @@ kbd {
   padding: 0 20px;
   font-size: 1rem;
   text-align: center;
-  color: #fff;
+  color: rgb(170, 170, 170);
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
   background-color: rgba(220, 0, 0, 1);
@@ -123,6 +123,7 @@ kbd {
 footer{
 border-radius:15px ;
 background-image: url(https://transphoto.org/photo/05/91/04/591042_s.jpg);
+background-size: cover;
 height:300px;
 width: 600px;
 color: gold;
@@ -179,6 +180,8 @@ input {
 }
 body{
 background-image: url(https://static.ukrinform.com/photos/2020_06/thumb_files/630_360_1593509249-2528.jpeg);
+background-position: center;
+background-size: cover;
 }
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .menu-main {
@@ -186,7 +189,7 @@ background-image: url(https://static.ukrinform.com/photos/2020_06/thumb_files/63
   margin: 40px 0 5px;
   padding: 25px 0 5px;
   text-align: center;
-  background: white;
+  background:wheat ;
   border-radius: 15px;
 }
 .menu-main li {display: inline-block;}
@@ -209,8 +212,8 @@ background-image: url(https://static.ukrinform.com/photos/2020_06/thumb_files/63
   display: inline-block;
   transition: color .2s;
 }
-.menu-main a, .menu-main a:visited {color: #9d999d;}
-.menu-main a.current, .menu-main a:hover{color: #feb386;}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: darkviolet;}
 .menu-main a:before,
 .menu-main a:after {
   content: "";
@@ -220,7 +223,7 @@ background-image: url(https://static.ukrinform.com/photos/2020_06/thumb_files/63
   right: 50%;
   bottom: -5px;
   left: 50%;
-  background: #feb386;
+  background: darkviolet;
   transition: .8s;
 }
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
@@ -235,8 +238,11 @@ media (max-width: 550px); {
   }
 textarea:blank {
   border: 3px solid red;
-}extarea:blank {
+  color-scheme: dark;
+}
+textarea:blank {
   border: 3px solid red;
+  color-scheme: dark;
 }
 label {
   display: block;
@@ -246,4 +252,28 @@ label {
 input[type='submit'],
 label {
   margin-top: 1rem;
+}
+button {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 2rem;
+}
+
+:modal {
+  background-color: beige;
+  border: 2px solid burlywood;
+  border-radius: 5px;
+}
+button {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 2rem;
+}
+
+:modal {
+  background-color: beige;
+  border: 2px solid burlywood;
+  border-radius: 5px;
 }
